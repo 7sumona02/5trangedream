@@ -24,7 +24,7 @@ export default function Page() {
   const socials = ["Github", "Linkedin", "Email", "Resume"]
 
   return (
-    <div className="h-screen flex justify-center items-center bg-[#5652f5] selection:text-black selection:bg-[#dddedf] overflow-hidden">
+    <div className="md:h-screen h-dvh flex justify-center items-center bg-[#5652f5] selection:text-black selection:bg-[#dddedf] overflow-hidden">
       <DitherTrail
         className="w-screen h-screen fixed inset-0 pointer-events-none"
         trailColor="#dddedf"
