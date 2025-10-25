@@ -1,5 +1,6 @@
 "use client"
 import { useEffect, useState } from "react"
+import DitherTrail from "@/components/Cursor";
 
 export default function Page() {
   const [time, setTime] = useState(() => new Date())
@@ -10,7 +11,7 @@ export default function Page() {
   }, [])
 
   const formattedTime = time.toLocaleTimeString("en-GB", { hour12: false })
-  const hoverStyle = "hover:text-[#2d0d1a] hover:bg-[#b8b890] cursor-pointer"
+  const hoverStyle = "hover:text-black hover:bg-[#dddedf] cursor-pointer"
 
   const works = [
     { title: "Free Gluten", role: "Freelance Developer", time: "2025" },
@@ -19,13 +20,19 @@ export default function Page() {
     { title: "Veridia.io", role: "Designer", time: "Oct/25" },
   ]
 
-  const projects = ["Yoake Studio", "Code Canvas"]
+  const projects = ["Ticker", "Yoake Studio", "Code Canvas"]
   const socials = ["Github", "Linkedin", "Email", "Resume"]
 
   return (
-    <div className="min-h-screen flex md:justify-start justify-center items-center bg-[#2d0d1a] selection:text-[#2d0d1a] selection:bg-[#b8b890]">
-      <div className="flex flex-col justify-center items-start md:p-10 p-5 font-mono text-[#b8b890] font-medium text-sm md:w-lg w-full">
-        <header className="flex justify-between md:w-lg w-full items-end">
+    <div className="h-screen flex justify-center items-center bg-[#5652f5] selection:text-black selection:bg-[#dddedf] overflow-hidden">
+      <DitherTrail
+        className="w-screen h-screen fixed inset-0 pointer-events-none"
+        trailColor="#dddedf"
+        dotSize={15}
+        fadeDuration={600}
+      />
+      <div className="flex flex-col md:p-10 p-5 font-mono text-[#dddedf] font-medium text-sm w-xl">
+        <header className="flex justify-between w-full items-end">
           <span>Sumona Biswas</span>
           <span className="text-xs">{formattedTime}</span>
         </header>
@@ -37,21 +44,30 @@ export default function Page() {
             Find my UI experiments at{" "}
             <span className={`${hoverStyle} underline`}>lab</span>.
           </p>
+          <p>
+            I also{" "}
+            <span className={`${hoverStyle} underline`}>write</span>.
+          </p>
         </section>
 
-        <section className="pt-5 md:w-lg w-full">
+        <section className="pt-5 w-full">
           <h2>{`{Works}`}</h2>
-          <div className="pt-3 space-y-0.5">
+          <div className="pt-3 space-y-1">
             {works.map(({ role, title, time }) => (
-              <div key={title} className="flex justify-between">
-                <div>
-                  ↳ {role} at <span className={`${hoverStyle} underline`}>{title}</span>
+              <div
+                key={title}
+                className="flex justify-between items-center flex-nowrap text-sm"
+              >
+                <div className="truncate">
+                  ↳ {role} at{" "}
+                  <span className={`${hoverStyle} underline`}>{title}</span>
                 </div>
-                <div>~ {time}</div>
+                <div className="ml-2 shrink-0 text-right">~ {time}</div>
               </div>
             ))}
           </div>
         </section>
+
 
         <section className="pt-5">
           <h2>{`{Projects}`}</h2>
@@ -75,6 +91,7 @@ export default function Page() {
           </div>
         </section>
       </div>
+      {/* <Link href='/lab'><div className="md:block hidden relative"><div className="bg-[#b8b890]/30 absolute m-auto inset-0 w-[250px] h-full z-50 hover:opacity-100 opacity-0 duration-250 ease-out transition-all"></div><HorizontalMarquee /></div></Link> */}
     </div>
   )
 }
