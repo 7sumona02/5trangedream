@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sumona Biswas ― Design Engineer",
+  title: "Sumona Biswas - Design Engineer",
   description: "Portfolio",
 };
 

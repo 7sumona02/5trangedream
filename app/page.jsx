@@ -16,10 +16,10 @@ export default function Page() {
   const hoverStyle = "hover:text-black hover:bg-[#dddedf] cursor-pointer"
 
   const works = [
-    { title: "Free Gluten", role: "Freelance Developer", time: "2025" },
-    { title: "FuturixAI", role: "Frontend Developer", time: "Oct/25" },
-    { title: "CVNT", role: "Tech Intern", time: "Jun/25" },
-    { title: "Veridia.io", role: "Designer", time: "Oct/25" },
+    { title: "Free Gluten", role: "Freelance Developer", time: "2025", link: "https://www.freegluten2025.com/" },
+    { title: "FuturixAI", role: "Frontend Developer", time: "Oct/25", link: "https://www.futurixai.com/" },
+    { title: "CVNT", role: "Tech Intern", time: "Jun/25", link: "https://www.linkedin.com/company/wearcvnt/" },
+    { title: "Veridia.io", role: "Designer", time: "Oct/25", link: "https://www.linkedin.com/company/veridia-io/posts/?feedView=all" },
   ]
 
   const projects = [
@@ -59,14 +59,14 @@ export default function Page() {
           <section className="pt-5 w-full">
             <h2>{`{Works}`}</h2>
             <div className="pt-3 space-y-1">
-              {works.map(({ role, title, time }) => (
+              {works.map(({ role, title, time, link }) => (
                 <div
                   key={title}
                   className="flex justify-between items-center flex-nowrap text-sm"
                 >
                   <div className="truncate">
                     ↳ {role} at{" "}
-                    <span className={`${hoverStyle} underline`}>{title}</span>
+                    <Link href={link} target="_blank" className={`${hoverStyle} underline`}>{title}</Link>
                   </div>
                   <div className="ml-2 shrink-0 text-right">~ {time}</div>
                 </div>
