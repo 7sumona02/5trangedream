@@ -46,7 +46,6 @@ export default function Page() {
 
           <section className="pt-5 space-y-1">
             <p>Design Engineer, Developer + Designer on the web.</p>
-            <p>Exploring & observing designs.</p>
             <p>
               Find my UI experiments at{" "}
               <Link href='/lab' className={`${hoverStyle} underline`}>lab</Link>.
