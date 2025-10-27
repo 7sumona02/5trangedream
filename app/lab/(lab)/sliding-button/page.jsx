@@ -10,7 +10,7 @@ const Page = () => {
   const [hovered, setHovered] = useState(false);
 
   return (
-    <div className="min-h-screen w-screen flex justify-center items-center bg-white">
+    <div className="md:min-h-screen min-h-dvh w-screen flex justify-center items-center bg-white">
       <motion.div
       whileHover={{scale: 1.05}}
       transition={{duration: 0.4, ease: easeOut}}

@@ -13,7 +13,7 @@ const Page = () => {
   const [open, setOpen] = useState(false)
 
   return (
-    <div className="min-h-screen w-screen flex justify-center items-center bg-neutral-50">
+    <div className="md:min-h-screen min-h-dvh w-screen flex justify-center items-center bg-neutral-50">
       <motion.div
         layout
         transition={{ type: 'spring', stiffness: 300, damping: 25 }}

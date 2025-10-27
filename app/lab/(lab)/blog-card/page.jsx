@@ -9,7 +9,7 @@ const inconsolata = Inconsolata({
 
 const page = () => {
     return (
-        <div className='min-h-screen w-screen flex justify-center items-center bg-neutral-900'>
+        <div className='md:min-h-screen min-h-dvh w-screen flex justify-center items-center bg-neutral-900'>
             <Link href='https://nazhamid.com/journal/' className={`${inconsolata.className} text-neutral-600 uppercase fixed mx-auto bottom-[10vh]`}>inspired from hamid's journal</Link>
             <div className='flex flex-col space-y-8 justify-start w-2xl'>
                 {blogData.map((blog, index) => (

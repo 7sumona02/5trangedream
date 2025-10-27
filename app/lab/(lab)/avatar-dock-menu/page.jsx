@@ -27,7 +27,7 @@ const Page = () => {
   const [hoverIndex, setHoverIndex] = useState(null);
 
   return (
-    <div className="min-h-screen w-screen flex justify-center items-center bg-neutral-100">
+    <div className="md:min-h-screen min-h-dvh w-screen flex justify-center items-center bg-neutral-100">
       <div className="p-3 border border-neutral-300 rounded-3xl bg-neutral-200 flex items-center space-x-3">
         {/* Page icons */}
         <div className="flex items-end px-3">

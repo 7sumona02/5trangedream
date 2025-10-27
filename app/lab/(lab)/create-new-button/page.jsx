@@ -50,7 +50,7 @@ const Page = () => {
   };
 
   return (
-    <div className="min-h-screen w-screen flex justify-center items-center">
+    <div className="md:min-h-screen min-h-dvh w-screen flex justify-center items-center">
       <div
         ref={ref}
         className="flex items-center rounded-2xl bg-black p-1 shadow-sm"

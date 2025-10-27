@@ -34,7 +34,7 @@ export default function Cards() {
   const [open, setOpen] = useState(true)
 
   return (
-    <div className="min-h-screen w-screen flex justify-center items-center bg-[#5652f5]">
+    <div className="md:min-h-screen min-h-dvh w-screen flex justify-center items-center bg-[#5652f5]">
       <div className="flex flex-col items-center gap-5">
         {/* Header */}
         <div className="w-full flex justify-between items-center">

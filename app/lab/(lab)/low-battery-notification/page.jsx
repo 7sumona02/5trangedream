@@ -27,7 +27,7 @@ const Page = () => {
     const ref = useOutsideClick(() => setOpen(false));
 
     return (
-        <div className="min-h-screen w-screen flex justify-center bg-neutral-50">
+        <div className="md:min-h-screen min-h-dvh w-screen flex justify-center bg-neutral-50">
             <div className="flex justify-center pt-5 select-none">
                 <AnimatePresence>
                     {open && (

@@ -66,7 +66,7 @@ const Page = () => {
     );
 
     return (
-        <div className="min-h-screen w-screen flex justify-center items-center">
+        <div className="md:min-h-screen min-h-dvh w-screen flex justify-center items-center">
             <div ref={ref} className="flex flex-wrap items-center gap-2 rounded-2xl border bg-background p-1 shadow-sm">
                 {tabs.map((tab, index) => {
                     if (tab.type === "separator") {

@@ -8,7 +8,7 @@ const Page = () => {
   const [activeTab, setActiveTab] = useState("Light");
 
   return (
-    <div className="min-h-screen w-screen flex justify-center items-center bg-white">
+    <div className="md:min-h-screen min-h-dvh w-screen flex justify-center items-center bg-white">
       <div className="relative flex items-center justify-center gap- p-1 rounded-xl bg-neutral-900 backdrop-blur-md">
         {tabs.map((tab) => (
           <button

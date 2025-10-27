@@ -26,7 +26,7 @@ export default page
 
 const Content = () => {
   return (
-    <div className='h-screen w-screen flex flex-col justify-center items-center gap-12 relative z-50'>
+    <div className='md:min-h-screen min-h-dvh w-screen flex flex-col justify-center items-center gap-12 relative z-50'>
         <Nav />
         <div className={`flex flex-col justify-center items-center ${pd.className} text-8xl leading-tighter tracking-[-0.5rem]`}>
             <div>Small studio.</div>

@@ -21,7 +21,7 @@ export default function Home() {
     };
 
     return (
-        <div className="min-h-screen flex items-center justify-center transition-colors duration-1000 bg-white dark:bg-black">
+        <div className="md:min-h-screen min-h-dvh flex items-center justify-center transition-colors duration-1000 bg-white dark:bg-black">
             <div className='fixed right-5 top-5'>
             <button
                 onClick={handleToggle}
