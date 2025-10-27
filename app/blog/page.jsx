@@ -18,7 +18,7 @@ const posts = [
 
 const Page = () => {
   return (
-    <div className="md:h-full h-dvh flex justify-center items-center bg-[#5652f5] selection:text-black selection:bg-[#dddedf] overflow-hidden">
+    <div className="md:h-full min-h-dvh flex justify-center items-center bg-[#5652f5] selection:text-black selection:bg-[#dddedf] overflow-hidden">
       <SmoothFadeLayout className="flex justify-center items-start pb-20 w-full">
         <div className="flex flex-col w-full max-w-xl md:p-10 p-5 font-mono text-[#dddedf] font-medium text-sm">
           
