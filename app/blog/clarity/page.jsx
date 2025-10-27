@@ -44,7 +44,7 @@ const page = () => {
                         <div><Link href='https://letterclub.org/' target="_blank" className={`${hoverStyle} underline`}>Letter Club</Link> surprised me in a different way. Their hero section was minimal, yet it had a playful energy. The CTA caught my eye immediately, simple and creative, and it sparked curiosity. I found myself signing up just to see what would happen next. The colors, the typography, the layout, everything felt intentional. It felt alive without being loud.</div>
                         <div className="w-full h-full rounded-md overflow-hidden mb-10">
                                     <img
-                                        src="/c1.png"
+                                        src="/c1.webp"
                                         className="h-full w-full object-cover"
                                     />
                                 </div>
@@ -52,7 +52,7 @@ const page = () => {
                         <div><Link href='https://rysa.app/' target="_blank" className={`${hoverStyle} underline`}>Rysa</Link> caught my attention too. They are digitizing wardrobes, and they show it beautifully. A small demo of a wardrobe in action, even rendered with playful visuals, made me understand instantly what the product offered. It was engaging and unique, not generic. It reminded me that visuals and videos work best when they tell a story about the product rather than just decorate the page.</div>
                         <div className="w-full h-full rounded-md overflow-hidden mb-10">
                                     <img
-                                        src="/c2.png"
+                                        src="/c2.webp"
                                         className="h-full w-full object-cover"
                                     />
                                 </div>

@@ -17,7 +17,7 @@ const posts = [
         title: "Pending wallet transactions",
         tag: "LAB",
         href: "/lab/pending-wallet-transactions",
-        img: "/l1.png"
+        img: "/l1.webp"
     },
     {
         title: "Theme Toggle",
@@ -29,7 +29,7 @@ const posts = [
         title: "Minimal Blog Cards",
         tag: "LAB",
         href: "/lab/blog-card",
-        img: "/l3.png"
+        img: "/l3.webp"
     },
     {
         title: "Create new button",
@@ -47,7 +47,7 @@ const posts = [
         title: "avatar dock menu",
         tag: "LAB",
         href: "/lab/avatar-dock-menu",
-        img: "/l6.png"
+        img: "/l6.webp"
     },
     {
         title: "Cursor trail",
@@ -59,7 +59,7 @@ const posts = [
         title: "inline overflow",
         tag: "LAB",
         href: "/lab/inline-overflow",
-        img: "/l8.png"
+        img: "/l8.webp"
     },
     {
         title: "low battery notification",
@@ -77,13 +77,13 @@ const posts = [
         title: "tabs",
         tag: "LAB",
         href: "/lab/tabs",
-        img: "/l11.png"
+        img: "/l11.webp"
     },
     {
         title: "layout tabs",
         tag: "LAB",
         href: "/lab/layout-tabs",
-        img: "/l12.png"
+        img: "/l12.webp"
     },
 ]
 
