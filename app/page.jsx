@@ -34,8 +34,8 @@ export default function Page() {
       <DitherTrail
         className="w-screen h-screen fixed inset-0 pointer-events-none"
         trailColor="#dddedf"
-        dotSize={15}
-        fadeDuration={600}
+        dotSize={20}
+        fadeDuration={400}
       />
       <SmoothFadeLayout className="flex justify-center items-center">
         <div className="flex flex-col md:p-10 p-5 font-mono text-[#dddedf] font-medium text-sm md:w-xl">
