@@ -49,7 +49,7 @@ const page = () => {
                                 <div>~ Implemented a theme toggle using the View Transition API for a smooth circle with blur effect, and animated the toggle button with <Link href='https://motion.dev/' target="_blank" className={`${hoverStyle} underline`}>motion</Link>, making navigation feel fluid and visually pleasant.</div>
                                 <div className="w-full h-full overflow-hidden">
                                     <video
-                                        src="/v1.mov"
+                                        src="/v1.mp4"
                                         className="h-full w-full object-cover"
                                         autoPlay
                                         muted
