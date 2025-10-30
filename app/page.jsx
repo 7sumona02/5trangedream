@@ -27,7 +27,13 @@ export default function Page() {
     { name: "Yoake Studio", link: "https://yoake-studio.vercel.app/" },
     { name: "Code Canvas", link: "https://code-canvas-neon.vercel.app/" },
   ];
-  const socials = ["Github", "Linkedin", "Email", "Resume"]
+
+  const socials = [
+    { name: "Github", link: "https://github.com/7sumona02" },
+    { name: "Linkedin", link: "https://linkedin.com/in/sumona-biswas" },
+    { name: "Email", link: "mailto:sumonadotwork@gmail.com" },
+    { name: "Resume", link: "https://drive.google.com/file/d/19avh42gmRcYicLy5HBT0S4FfSTPKhkRF/view" }, // optional local link
+  ];
 
   return (
     <div className="md:h-screen min-h-dvh flex justify-center items-center bg-[#5652f5] selection:text-black selection:bg-[#dddedf] overflow-hidden py-5">
@@ -91,24 +97,23 @@ export default function Page() {
             <h2>{`{OpenSource}`}</h2>
             <div className="pt-3 space-y-1">
               <Link href='/blog/lexit'>↳ <span className={`${hoverStyle} underline`}>Lexit</span></Link>
-              <div></div>
             </div>
           </section>
 
           <section className="pt-5">
             <h2>{`{Online}`}</h2>
             <div className="pt-3 space-y-0.5">
-              {socials.map((name) => (
+              {socials.map(({ name, link }) => (
                 <div key={name}>
-                  ↳ <span className={hoverStyle}>{name}</span>
+                  ↳ <Link href={link} target="_blank" className={`${hoverStyle} underline`}>
+                    {name}
+                  </Link>
                 </div>
               ))}
             </div>
           </section>
         </div>
       </SmoothFadeLayout>
-      {/* <Link href='/lab'><div className="md:block hidden relative"><div className="bg-[#b8b890]/30 absolute m-auto inset-0 w-[250px] h-full z-50 hover:opacity-100 opacity-0 duration-250 ease-out transition-all"></div><HorizontalMarquee /></div></Link> */}
     </div>
   )
 }
-
