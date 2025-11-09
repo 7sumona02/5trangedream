@@ -23,6 +23,7 @@ export default function Page() {
   ]
 
   const projects = [
+    { name: "Linkspace", link: "https://linkspace.sumona.me/" },
     { name: "Ticker", link: "https://ticker-next.vercel.app/" },
     { name: "Yoake Studio", link: "https://yoake-studio.vercel.app/" },
     { name: "Code Canvas", link: "https://code-canvas-neon.vercel.app/" },
