@@ -34,7 +34,7 @@ export default function Page() {
     { name: "Github", link: "https://github.com/7sumona02" },
     { name: "Linkedin", link: "https://linkedin.com/in/sumona-biswas" },
     { name: "Email", link: "mailto:sumonadotwork@gmail.com" },
-    { name: "Resume", link: "https://drive.google.com/file/d/19avh42gmRcYicLy5HBT0S4FfSTPKhkRF/view" }, 
+    { name: "Resume", link: "https://drive.google.com/file/d/17aVV7crExybOJfKU4XK6leP2EXkCtFf7/view?usp=sharing" }, 
   ];
 
   return (
