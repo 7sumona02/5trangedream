@@ -21,8 +21,8 @@ const page = () => {
                         </div>
                     </div>
                     <div className='flex items-center gap-3'>
-                        <LinkComp link='' text='X' />
-                        <LinkComp link='' text='Email' />
+                        <LinkComp link='https://x.com/weebdev_san' text='X' />
+                        <LinkComp link='mailto:sumonadotwork@gmail.com' text='Email' />
                     </div>
                 </div>
                 <CTA />
