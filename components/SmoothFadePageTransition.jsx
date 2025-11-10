@@ -1,3 +1,4 @@
+'use client'
 import { motion, AnimatePresence, easeOut } from 'framer-motion'
 
 const variants = {

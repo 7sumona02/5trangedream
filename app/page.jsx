@@ -1,18 +1,9 @@
-"use client"
-import { useEffect, useState } from "react"
 import DitherTrail from "@/components/Cursor";
 import SmoothFadeLayout from "@/components/SmoothFadePageTransition"
 import Link from "next/link";
+import Time from '@/components/Time'
 
 export default function Page() {
-  const [time, setTime] = useState(() => new Date())
-
-  useEffect(() => {
-    const interval = setInterval(() => setTime(new Date()), 1000)
-    return () => clearInterval(interval)
-  }, [])
-
-  const formattedTime = time.toLocaleTimeString("en-GB", { hour12: false })
   const hoverStyle = "hover:text-black hover:bg-[#dddedf] cursor-pointer"
 
   const works = [
@@ -49,11 +40,11 @@ export default function Page() {
         <div className="flex flex-col md:p-10 p-5 font-mono text-[#dddedf] font-medium text-sm md:w-xl">
           <header className="flex justify-between w-full items-end">
             <span>Sumona Biswas</span>
-            <span className="text-xs">{formattedTime}</span>
+            <span className="text-xs"><Time /></span>
           </header>
 
           <section className="pt-5 space-y-1">
-            <p>Design Engineer, Developer + Designer on the web.</p>
+            <p>Design Engineer, Founder of <Link href='/studio' className={`${hoverStyle} underline`}>Pix Studio</Link></p>
             <p>
               Find my UI experiments at{" "}
               <Link href='/lab' className={`${hoverStyle} underline`}>lab</Link>.

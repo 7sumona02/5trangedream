@@ -1,20 +1,5 @@
-// CursorDitherTrail.tsx – fluid monochrome dither tail that follows the cursor
-// -----------------------------------------------------------------------------
-// Concept: as the user moves the mouse, we paint tiny 2×2 pixel blocks onto a
-// full‑size canvas.  Each new block is chosen either as `trailColor` or fully
-// transparent based on a pseudo‑random threshold (simple Bayer matrix), giving
-// the appearance of a dynamic dithering effect that fades out with time.
-//
-// Props
-//  • trailColor     ‑ HEX string used for the dots (default lime‑green)
-//  • dotSize        ‑ pixel size of each painted square (1–4 recommended)
-//  • fadeDuration   ‑ ms until a dot fully fades (via alpha decay)
-//  • className      ‑ tailwind classes for outer wrapper (size control)
-//
-// The component uses `requestAnimationFrame` to gradually clear older drawings
-// creating a smooth, fluid tail rather than an instantly filling canvas.
-// -----------------------------------------------------------------------------
-import React, { useRef, useEffect } from "react";
+'use client'
+import { useRef, useEffect } from "react";
 
 export function Cursor({
   trailColor = "#D0FBB6", // lime by default

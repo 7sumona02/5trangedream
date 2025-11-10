@@ -1,4 +1,3 @@
-"use client"
 import SmoothFadeLayout from "@/components/SmoothFadePageTransition"
 import Link from "next/link"
 import {

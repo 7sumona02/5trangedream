@@ -1,5 +1,3 @@
-"use client"
-
 import SmoothFadeLayout from "@/components/SmoothFadePageTransition"
 import {
   Breadcrumb,

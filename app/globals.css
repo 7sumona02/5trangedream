@@ -126,3 +126,7 @@ html, body {
   overscroll-behavior: contain;
   scroll-behavior: smooth;
 }
+
+.cursor-pixel {
+  cursor: url('/cursor.cur'), default;
+}
