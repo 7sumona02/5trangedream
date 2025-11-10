@@ -72,6 +72,7 @@ const Contact = () => {
     return (
         <div className="w-full h-100 mt-20">
             <div className="bg-[#dddedf] w-40 h-10 text-sm flex justify-center items-center md:ml-15 ml-10 relative rounded-t-xl text-black">
+                <div className="bg-[#dddedf] h-2 w-50 absolute -bottom-1 z-10"></div>
                 <div className="absolute size-10 bg-[#5652f5] rounded-full bottom-0 -left-10 z-10"></div>
                 <div className="absolute size-10 bg-[#5652f5] rounded-full bottom-0 -right-10 z-10"></div>
                 <div className="absolute w-5 h-5 bg-[#dddedf] bottom-0 -left-4.5"></div>
