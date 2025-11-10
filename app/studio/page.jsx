@@ -8,7 +8,7 @@ const page = () => {
     return (
         <SmoothFadeLayout>
             <Container className='font-mono text-[#dddedf] md:px-0 px-5'>
-                <div className='flex md:flex-row flex-col justify-between items-start'>
+                <div className='flex md:flex-row flex-col justify-between items-start md:gap-0 gap-5'>
                     <div>
                         <Link href='/' className='text-lg cursor-pointer'>Sumona Biswas</Link>
                         <div className='text-sm max-w-lg'>
