@@ -124,7 +124,7 @@
 
 html, body {
   background-color: #5652f5; 
-  overscroll-behavior: contain;
+  overscroll-behavior: none;
   scroll-behavior: smooth;
 }
 
