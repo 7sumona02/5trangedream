@@ -1,5 +1,7 @@
 import { cn } from '@/lib/utils'
+import { InstagramIcon, TwitterIcon } from 'lucide-react'
 import Link from 'next/link'
+import { FaBehance, FaLinkedin } from 'react-icons/fa'
 
 const page = () => {
     return (
@@ -8,6 +10,8 @@ const page = () => {
             <Philosphy />
             <Beyond />
             <Gratitude />
+            <CTA />
+            <Footer />
         </div>
     )
 }
@@ -63,7 +67,7 @@ const LinkText = ({ children, className, link }) => {
 };
 
 const Container = ({ children }) => {
-    return (<div className='md:w-5xl w-full mx-auto pt-20 relative z-50'>{children}</div>)
+    return (<div className='md:w-5xl w-full mx-auto relative z-50'>{children}</div>)
 }
 
 const Philosphy = () => {
@@ -138,19 +142,73 @@ const Gratitude = () => {
                         <Content className={'w-1/2'}>I owe a lot to the people who've supported me througout my journey - thank you!</Content>
                         <div className='w-1/2 flex justify-start md:gap-20 gap-10'>
                             <div className='flex flex-col gap-3'>
-                            <LinkText link='/' className='font-sans text-sm'>Spence</LinkText>
-                            <LinkText link='/' className='font-sans text-sm'>Stephen</LinkText>
-                            <LinkText link='/' className='font-sans text-sm'>Noah</LinkText>
-                        </div>
-                        <div className='flex flex-col gap-3'>
-                            <LinkText link='/' className='font-sans text-sm'>Matthew</LinkText>
-                            <LinkText link='/' className='font-sans text-sm'>Andrew</LinkText>
-                            <LinkText link='/' className='font-sans text-sm'>James</LinkText>
-                        </div>
+                                <LinkText link='/' className='font-sans text-sm'>Spence</LinkText>
+                                <LinkText link='/' className='font-sans text-sm'>Stephen</LinkText>
+                                <LinkText link='/' className='font-sans text-sm'>Noah</LinkText>
+                            </div>
+                            <div className='flex flex-col gap-3'>
+                                <LinkText link='/' className='font-sans text-sm'>Matthew</LinkText>
+                                <LinkText link='/' className='font-sans text-sm'>Andrew</LinkText>
+                                <LinkText link='/' className='font-sans text-sm'>James</LinkText>
+                            </div>
                         </div>
                     </div>
                 </div>
             </Container>
+        </div>
+    )
+}
+
+const CTA = () => {
+    return (
+        <div className='pt-10 pb-20'>
+            <div className='bg-black w-[90vw] h-fit md:py-20 py-10 flex flex-col justify-center items-center'>
+                <div className='md:w-6xl flex md:flex-row flex-col justify-center md:gap-40 gap-10 items-start md:px-0 px-5'>
+                    <div>
+                        <Title className={'text-white'}>I'd love to meet you!</Title>
+                        <Content className={'text-neutral-400 mt-5'}>Whether your're a founder looking for a design ace, designer looking for a collaborator, or just a regular human looking for some conversation, I'd love to connect over some virtual coffee.</Content>
+                    </div>
+                    <div className='flex flex-col gap-5'>
+                        <Button link='/'>Dm me on twitter</Button>
+                        <Button link='/'>Email me</Button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
+const Button = ({ children, link }) => {
+    return (
+        <Link href={link} className='bg-neutral-700 uppercase text-white font-sans w-fit font-medium text-sm py-4 px-8 cursor-pointer'>{children}</Link>
+    )
+}
+
+const Footer = () => {
+    return (
+        <div className='w-screen h-fit bg-lime-300 py-10 md:px-0 px-5'>
+            <div className='md:w-6xl mx-auto flex justify-between items-start'>
+                <div className='w-1/2'>
+                    <div>
+                        <Title>Let's build something together.</Title>
+                    </div>
+                    <div className='flex items-center gap-3 mt-5'>
+                        <div className='bg-black p-2 rounded-full w-fit flex items-center justify-center'><TwitterIcon className='size-4' fill='oklch(89.7% 0.196 126.665)' /></div>
+                        <div className='bg-black p-2 rounded-full w-fit flex items-center justify-center'><InstagramIcon className='size-4' fill='oklch(89.7% 0.196 126.665)' /></div>
+                        <div className='bg-black p-2 rounded-full w-fit flex items-center justify-center'><FaLinkedin className='size-4' fill='oklch(89.7% 0.196 126.665)' /></div>
+                        <div className='bg-black p-2 rounded-full w-fit flex items-center justify-center'><FaBehance className='size-4' fill='oklch(89.7% 0.196 126.665)' /></div>
+                    </div>
+                </div>
+                <div className='w-1/2 flex justify-end md:gap-20 gap-10'>
+                    <div className='flex flex-col gap-3'>
+                        <LinkText link='/' className='font-sans text-sm'>Design</LinkText>
+                        <LinkText link='/' className='font-sans text-sm'>Illustration</LinkText>
+                    </div>
+                    <div className='flex flex-col gap-3'>
+                        <LinkText link='/' className='font-sans text-sm'>About</LinkText>
+                        <LinkText link='/' className='font-sans text-sm'>Resume</LinkText>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }
