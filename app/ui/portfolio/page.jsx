@@ -140,7 +140,7 @@ const Gratitude = () => {
                 <div className='flex flex-col gap-5 mt-7'>
                     <div className='w-full flex justify-between items-start gap-10'>
                         <Content className={'w-1/2'}>I owe a lot to the people who've supported me througout my journey - thank you!</Content>
-                        <div className='w-1/2 flex justify-start md:gap-20 gap-10'>
+                        <div className='w-1/2 flex justify-end md:gap-20 gap-10'>
                             <div className='flex flex-col gap-3'>
                                 <LinkText link='/' className='font-sans text-sm'>Spence</LinkText>
                                 <LinkText link='/' className='font-sans text-sm'>Stephen</LinkText>
@@ -163,7 +163,7 @@ const CTA = () => {
     return (
         <div className='pt-10 pb-20'>
             <div className='bg-black w-[90vw] h-fit md:py-20 py-10 flex flex-col justify-center items-center'>
-                <div className='md:w-6xl flex md:flex-row flex-col justify-center md:gap-40 gap-10 items-start md:px-0 px-5'>
+                <div className='md:w-6xl flex md:flex-row flex-col justify-center md:gap-60 gap-10 items-start md:px-0 px-5'>
                     <div>
                         <Title className={'text-white'}>I'd love to meet you!</Title>
                         <Content className={'text-neutral-400 mt-5'}>Whether your're a founder looking for a design ace, designer looking for a collaborator, or just a regular human looking for some conversation, I'd love to connect over some virtual coffee.</Content>
@@ -186,29 +186,30 @@ const Button = ({ children, link }) => {
 const Footer = () => {
     return (
         <div className='w-screen h-fit bg-lime-300 py-10 md:px-0 px-5'>
-            <div className='md:w-6xl mx-auto flex justify-between items-start'>
-                <div className='w-1/2'>
-                    <div>
-                        <Title>Let's build something together.</Title>
-                    </div>
-                    <div className='flex items-center gap-3 mt-5'>
-                        <div className='bg-black p-2 rounded-full w-fit flex items-center justify-center'><TwitterIcon className='size-4' fill='oklch(89.7% 0.196 126.665)' /></div>
-                        <div className='bg-black p-2 rounded-full w-fit flex items-center justify-center'><InstagramIcon className='size-4' fill='oklch(89.7% 0.196 126.665)' /></div>
-                        <div className='bg-black p-2 rounded-full w-fit flex items-center justify-center'><FaLinkedin className='size-4' fill='oklch(89.7% 0.196 126.665)' /></div>
-                        <div className='bg-black p-2 rounded-full w-fit flex items-center justify-center'><FaBehance className='size-4' fill='oklch(89.7% 0.196 126.665)' /></div>
+            <Container>
+                <Title>Let's build something together.</Title>
+                <div className='flex flex-col gap-5 mt-7'>
+                    <div className='w-full flex justify-between items-start gap-10'>
+                        <Content className={'w-1/2'}>
+                            <div className='flex items-center gap-3'>
+                                <div className='bg-black p-2 rounded-full w-fit flex items-center justify-center'><TwitterIcon className='size-4' fill='oklch(89.7% 0.196 126.665)' /></div>
+                                <div className='bg-black p-2 rounded-full w-fit flex items-center justify-center'><InstagramIcon className='size-4' fill='oklch(89.7% 0.196 126.665)' /></div>
+                                <div className='bg-black p-2 rounded-full w-fit flex items-center justify-center'><FaLinkedin className='size-4' fill='oklch(89.7% 0.196 126.665)' /></div>
+                                <div className='bg-black p-2 rounded-full w-fit flex items-center justify-center'><FaBehance className='size-4' fill='oklch(89.7% 0.196 126.665)' /></div>
+                            </div></Content>
+                        <div className='w-1/2 flex justify-end md:gap-20 gap-10'>
+                            <div className='flex flex-col gap-3'>
+                                <LinkText link='/' className='font-sans text-sm'>Design</LinkText>
+                                <LinkText link='/' className='font-sans text-sm'>Illustration</LinkText>
+                            </div>
+                            <div className='flex flex-col gap-3'>
+                                <LinkText link='/' className='font-sans text-sm'>About</LinkText>
+                                <LinkText link='/' className='font-sans text-sm'>Resume</LinkText>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div className='w-1/2 flex justify-end md:gap-20 gap-10'>
-                    <div className='flex flex-col gap-3'>
-                        <LinkText link='/' className='font-sans text-sm'>Design</LinkText>
-                        <LinkText link='/' className='font-sans text-sm'>Illustration</LinkText>
-                    </div>
-                    <div className='flex flex-col gap-3'>
-                        <LinkText link='/' className='font-sans text-sm'>About</LinkText>
-                        <LinkText link='/' className='font-sans text-sm'>Resume</LinkText>
-                    </div>
-                </div>
-            </div>
+            </Container>
         </div>
     )
 }
