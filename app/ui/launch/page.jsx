@@ -108,7 +108,7 @@ const FAQItem = ({ question, answer, isOpen, onClick }) => {
             className="bg-neutral-100 p-5 rounded-xl md:w-[24vw] w-xs cursor-pointer overflow-hidden"
             onClick={onClick}
             style={{
-                borderRadius: open ? "1rem" : "0.75rem",
+                borderRadius: isOpen ? "1rem" : "0.75rem",
             }}
         >
             <motion.div layout className="flex justify-between items-center">
