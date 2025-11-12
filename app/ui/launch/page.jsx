@@ -105,14 +105,14 @@ const FAQItem = ({ question, answer, isOpen, onClick }) => {
     return (
         <motion.div
             layout
-            className="bg-neutral-100 p-5 rounded-xl md:max-w-md max-w-xs w-full cursor-pointer overflow-hidden"
+            className="bg-neutral-100 p-5 rounded-xl md:w-[24vw] w-xs cursor-pointer overflow-hidden"
             onClick={onClick}
             style={{
                 borderRadius: open ? "1rem" : "0.75rem",
             }}
         >
             <motion.div layout className="flex justify-between items-center">
-                <div className="text-black font-medium md:max-w-sm max-w-96 tracking-tight text-lg">{question}</div>
+                <div className="text-black font-medium tracking-tight text-lg">{question}</div>
                 {isOpen ? (
                     <div className='bg-neutral-900 rounded-full size-7 flex justify-center items-center shadow-smooth'><MinusIcon className="size-4 text-neutral-100" /></div>
                 ) : (
@@ -127,7 +127,7 @@ const FAQItem = ({ question, answer, isOpen, onClick }) => {
                     animate={{ opacity: 1, y: 0, borderRadius: 100 }}
                     exit={{ opacity: 0, y: -10, borderRadius: 100 }}
                     transition={{ duration: 0.25, ease: "easeInOut" }}
-                    className="mt-3 text-neutral-600 md:max-w-md max-w-xs tracking-tight text-base"
+                    className="mt-3 text-neutral-600 md:w-[24vw] w-[70vw] tracking-tight text-base"
                 >
                     {answer}
                 </motion.div>
