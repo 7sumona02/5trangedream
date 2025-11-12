@@ -26,7 +26,7 @@ export default page
 
 const Footer = () => {
   return (
-    <div className='w-screen grid md:grid-cols-3 grid-cols-1 h-fit'>
+    <div className='w-screen grid md:grid-cols-3 grid-cols-1 h-fit fixed bottom-0'>
       <FooterButton icon={FaSpotify} className='md:border-r md:border-r-neutral-50 border-b border-b-neutral-50'  link='https://open.spotify.com/artist/4lJVzoSN6iGOYpFGfOCato'>
         Spotify
       </FooterButton>
@@ -63,13 +63,13 @@ const Main = () => {
     const defaultImg = '/rw.webp'
     const [currentImg, setCurrentImg] = useState(defaultImg)
     return (
-        <div className='w-screen md:h-[80vh] min-h-dvh overflow-hidden flex md:flex-row flex-col px-5 py-10'>
-            <div className='flex-1 h-screen w-full'>
+        <div className='w-screen md:h-[80vh] h-dvh overflow-hidden flex md:flex-row flex-col md:gap-0 gap-10 px-5 py-10'>
+            <div className='md:flex-1 h-screen w-full'>
                 <div className='h-[50vh] md:w-[30vw] overflow-hidden bg-black'>
                     <img src={currentImg} className='w-full h-full song-img' />
                 </div>
             </div>
-            <div className='flex-1 md:h-screen h-fit w-full'>
+            <div className='md:flex-1 h-screen w-full'>
                 <Text className='text-sm text-neutral-400'>Releases</Text>
                 <div className='mt-5 w-fit'>
                     {releases.map((r, i) => (
