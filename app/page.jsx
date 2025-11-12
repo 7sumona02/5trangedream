@@ -18,6 +18,8 @@ export default function Page() {
     { name: "Ticker", link: "https://ticker-next.vercel.app/" },
     { name: "Yoake Studio", link: "https://yoake-studio.vercel.app/" },
     { name: "Code Canvas", link: "https://code-canvas-neon.vercel.app/" },
+    { name: "Launch", link: "https://sumona.me/ui/launch" },
+    { name: "Portfolio", link: "https://sumona.me/ui/portfolio" },
   ];
 
   const socials = [
