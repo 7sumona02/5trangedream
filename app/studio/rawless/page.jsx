@@ -52,7 +52,7 @@ const Footer = () => {
 
 const Music = () => {
   return (
-    <div className='min-h-screen w-screen flex items-center justify-center md:px-0 px-5'>
+    <section id='music' className='min-h-screen w-screen flex items-center justify-center md:px-0 px-5'>
       <iframe
         data-testid="embed-iframe"
         style={{ borderRadius: "0px" }}
@@ -65,7 +65,7 @@ const Music = () => {
         allowFullScreen
         className='md:w-[40%] w-sm'
       ></iframe>
-    </div>
+    </section>
   )
 }
 
@@ -139,7 +139,7 @@ const Main = () => {
   const defaultImg = '/rw.webp'
   const [currentImg, setCurrentImg] = useState(defaultImg)
   return (
-    <div className='w-screen md:h-[96vh] h-dvh overflow-hidden flex md:flex-row flex-col md:gap-0 gap-10 px-5 py-10'>
+    <section className='w-screen md:h-[96vh] h-dvh overflow-hidden flex md:flex-row flex-col md:gap-0 gap-10 px-5 py-10'>
       <div className='md:flex-1 h-screen w-full'>
         <div className='h-[50vh] md:w-[30vw] overflow-hidden bg-black'>
           <img src={currentImg} className='w-full h-full song-img' />
@@ -166,7 +166,7 @@ const Main = () => {
             ))}
           </div>
         </div>
-        <div className='flex flex-col gap-2 md:mt-[59vh] mt-15'>
+        <div className='flex flex-col gap-2 md:mt-[58.5vh] mt-15'>
           <Text className='text-sm text-neutral-400'>Links</Text>
           <div className='flex space-x-3 items-center'>
             {icons.map(({ Icon, link, name }) => (
@@ -184,20 +184,20 @@ const Main = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 
 const Nav = () => {
   return (
-    <div className='w-full flex justify-between items-center px-5 py-3 h-[5vh]'>
+    <nav className='w-full flex justify-between items-center px-5 py-3 h-[5vh]'>
       <Text>Rawless</Text>
       <div className='flex gap-5 items-center'>
         <Link href='#videos'><Text>Videos</Text></Link>
-        <Text>Music</Text>
+        <Link href='#music'><Text>Music</Text></Link>
         <Text>Contact</Text>
       </div>
-    </div>
+    </nav>
   )
 }
 
