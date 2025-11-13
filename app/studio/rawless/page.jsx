@@ -195,7 +195,7 @@ const Nav = () => {
       <div className='flex gap-5 items-center'>
         <Link href='#videos'><Text>Videos</Text></Link>
         <Link href='#music'><Text>Music</Text></Link>
-        <Text>Contact</Text>
+        <Link href='mailto:bookingrawless@gmail.com'><Text>Contact</Text></Link>
       </div>
     </nav>
   )
