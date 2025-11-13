@@ -191,7 +191,7 @@ const Main = () => {
 const Nav = () => {
   return (
     <nav className='w-full flex justify-between items-center px-5 py-3 h-[5vh]'>
-      <Text>Rawless</Text>
+      <Link href='/'><Text>Rawless</Text></Link>
       <div className='flex gap-5 items-center'>
         <Link href='#videos'><Text>Videos</Text></Link>
         <Link href='#music'><Text>Music</Text></Link>
