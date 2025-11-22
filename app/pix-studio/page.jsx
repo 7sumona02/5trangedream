@@ -1,12 +1,13 @@
 'use client'
 import { ClipboardIcon } from 'lucide-react'
 import Link from 'next/link';
-import { FaXTwitter } from 'react-icons/fa6';
+import { FaInstagram, FaXTwitter } from 'react-icons/fa6';
 import { GoGlobe } from 'react-icons/go';
 import { toast } from "sonner"
 import { useEffect, useState } from 'react';
 import Time from '@/components/Time'
 import {cn} from '@/lib/utils'
+import SmoothFadeLayout from "@/components/SmoothFadePageTransition"
 
 const page = () => {
   const [selected, setSelected] = useState("info");
@@ -19,10 +20,11 @@ const page = () => {
   const hoverStyle = "hover:text-black hover:bg-[#dddedf] cursor-pointer"
 
   return (
-    <div className='w-screen h-screen flex text-[#dddedf] uppercase font-mono text-sm'>
+     <SmoothFadeLayout>
+    <div className='w-screen h-screen flex md:flex-row flex-col text-[#dddedf] uppercase font-mono text-sm'>
 
       {/* LEFT SIDE */}
-      <div className='flex-1 flex flex-col h-screen justify-between border-r border-r-[#dddedf]'>
+      <div className='flex-1 flex flex-col h-screen justify-between md:border-r border-r-[#dddedf]'>
 
         {/* Top Bar */}
         <div>
@@ -50,7 +52,7 @@ const page = () => {
             {/* -------- INFO CONTENT -------- */}
             {selected === "info" && (
               <>
-                <div className='w-md pb-9 px-5'>
+                <div className='md:w-md pb-9 px-5'>
                   Built for artists, musicians, and modern creatives, we are a design studio where digital craft meets visual storytelling.
                   From expressive websites to bold cover art and flyers, our work is rooted in clarity, imagination, and attention to detail.
                   We shape visuals that feel true to you. making sure every piece fits together to elevate your creative world.
@@ -109,13 +111,14 @@ const page = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className='w-full flex justify-between items-center border-t border-t-[#dddedf] p-3 px-5'>
+        <div className='w-full flex justify-between items-center border-t border-b border-t-[#dddedf] md:border-b-transparent border-b-[#dddedf] p-3 px-5'>
           <div onClick={handleEmailCopy} className='bg-[#dddedf] border border-black py-1 px-2 flex items-center gap-2 text-sm cursor-pointer group text-black'>
             <span>sumonadotwork@gmail.com</span>
             <ClipboardIcon className='size-[15px] opacity-70 group-hover:opacity-100 transition-all mb-0.5' />
           </div>
           <div className='flex items-center gap-3'>
             <FaXTwitter className='size-4' />
+            <FaInstagram className='size-4' />
             <Link href='/home'><GoGlobe className='size-4' /></Link>
           </div>
         </div>
@@ -135,7 +138,7 @@ const page = () => {
           {/* CONTENT AREA */}
           <div className='p-5 pb-12 h-[94vh] overflow-y-scroll scrollbar-none flex flex-col gap-7'>
             <WorkCard
-              href='/'
+              href='https://void55.vercel.app/'
               images={[
                 "/works/v1.webp",
                 "/works/v2.webp",
@@ -210,6 +213,7 @@ const page = () => {
 
       </div>
     </div>
+    </SmoothFadeLayout>
   )
 }
 
