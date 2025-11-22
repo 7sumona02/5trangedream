@@ -1,17 +1,11 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Geist, Geist_Mono, Inconsolata } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "sonner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
-});
-
-const inconsolata = Inconsolata({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-  weight: ["400","500","600"]
 });
 
 const geistMono = Geist_Mono({
@@ -32,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${inconsolata.className} antialiased cursor-pixel`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased cursor-pixel`}
       >
          <Toaster
          toastOptions={{

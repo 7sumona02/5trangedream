@@ -2,7 +2,7 @@
 import { useRef, useEffect } from "react";
 
 export function Cursor({
-  trailColor = "#D0FBB6", // lime by default
+  trailColor = "#dddedf", // lime by default
   dotSize = 4,
   fadeDuration = 600,
   className = "w-full h-full",
