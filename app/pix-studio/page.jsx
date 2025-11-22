@@ -21,7 +21,7 @@ const page = () => {
 
   return (
      <SmoothFadeLayout>
-    <div className='w-screen h-screen flex md:flex-row flex-col text-[#dddedf] uppercase font-mono text-sm'>
+    <div className='w-screen md:h-screen h-dvh flex md:flex-row flex-col text-[#dddedf] uppercase font-mono text-sm'>
 
       {/* LEFT SIDE */}
       <div className='flex-1 flex flex-col h-screen justify-between md:border-r border-r-[#dddedf]'>
