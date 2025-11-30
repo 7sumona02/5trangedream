@@ -46,7 +46,7 @@ export default function Page() {
           </header>
 
           <section className="pt-5 space-y-1">
-            <p>Design Engineer, Founder of <Link href='/pix-studio' className={`${hoverStyle} underline`}>Pix Studio</Link></p>
+            <p>Design Engineer & Founder of{" "}<Link href='/pix-studio' className={`${hoverStyle} underline`}>Pix Studio</Link></p>
             <p>
               Find my UI experiments at{" "}
               <Link href='/lab' className={`${hoverStyle} underline`}>lab</Link>.
@@ -55,6 +55,7 @@ export default function Page() {
               I also{" "}
               <Link href='/blog' className={`${hoverStyle} underline`}>write</Link>.
             </p>
+            <p>See my regular work updates on <Link href='https://x.com/weebdev_san' className={`${hoverStyle} underline`}>X</Link>.</p>
           </section>
 
           <section className="pt-5 w-full">

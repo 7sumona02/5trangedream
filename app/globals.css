@@ -150,3 +150,21 @@ html, body {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+
+@keyframes rotate-steps {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+.animate-rotateSteps {
+  transform-style: preserve-3d;
+}
+
+.animate-rotateSteps:hover {
+  animation: rotate-steps 3s infinite steps(10, end);
+}

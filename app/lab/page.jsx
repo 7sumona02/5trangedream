@@ -83,6 +83,18 @@ const posts = [
         href: "/lab/layout-tabs",
         img: "/l12.webp"
     },
+    {
+        title: "step rotatey",
+        tag: "LAB",
+        href: "/lab/step-rotatey",
+        video: "/girl.mp4"
+    },
+    {
+        title: "dropdown",
+        tag: "LAB",
+        href: "/lab/dropdown",
+        img: "/dd.webp"
+    },
 ]
 
 const Page = () => {
