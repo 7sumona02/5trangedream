@@ -95,6 +95,12 @@ const posts = [
         href: "/lab/dropdown",
         img: "/dd.webp"
     },
+    {
+        title: "actions menu",
+        tag: "LAB",
+        href: "/lab/actions-menu",
+        img: "/actions.webp"
+    },
 ]
 
 const Page = () => {
