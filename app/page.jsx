@@ -46,7 +46,7 @@ export default function Page() {
           </header>
 
           <section className="pt-5 space-y-1">
-            <p>Design Engineer & Founder of{" "}<Link href='/pix-studio' className={`${hoverStyle} underline`}>Pix Studio</Link></p>
+            <p>Design Engineer & Founder of{" "}<Link href='https://pixstudio.sumona.me/' className={`${hoverStyle} underline`}>Pix Studio</Link></p>
             <p>
               Find my UI experiments at{" "}
               <Link href='/lab' className={`${hoverStyle} underline`}>lab</Link>.
